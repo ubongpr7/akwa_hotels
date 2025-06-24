@@ -478,7 +478,7 @@ class AccommodationBooking(ProfileMixin):
         
         prefix = "ACC"
         suffix = ''.join(random.choices(string.ascii_uppercase + string.digits, k=8))
-        return f"{prefix}{self.profile_id}{suffix}"
+        return f"{prefix}-{self.profile_id}-{suffix}"
 
 
 class AccommodationReview(ProfileMixin):

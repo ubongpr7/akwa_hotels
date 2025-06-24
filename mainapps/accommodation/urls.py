@@ -17,5 +17,5 @@ router.register(r'bookings', AccommodationBookingViewSet, basename='booking')
 router.register(r'reviews', AccommodationReviewViewSet, basename='review')
 
 urlpatterns = [
-    path('api/v1/', include(router.urls)),
+    path('', include(router.urls)),
 ]

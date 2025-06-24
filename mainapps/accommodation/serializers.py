@@ -158,8 +158,7 @@ class AccommodationCreateUpdateSerializer(serializers.ModelSerializer):
         model = Accommodation
         fields = [
             'name', 'slug', 'description', 'short_description',
-            'accommodation_type', 'address', 'city', 'state', 'country',
-            'postal_code', 'latitude', 'longitude', 'phone', 'email',
+            'accommodation_type', 'address', 'phone', 'email',
             'website', 'base_price', 'currency_id', 'check_in_time',
             'check_out_time', 'cancellation_policy', 'house_rules',
             'total_rooms', 'max_guests', 'meta_title', 'meta_description',
